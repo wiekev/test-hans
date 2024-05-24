@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: corbel;
+    src: url(corbel.TTF);
+}
+
+.pagina-home{
+    background-color: #5A4632;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.5fr;
+    grid-template-areas: "nav nav nav" "tekst foto-hooft foto-hooft" "tekst-en tekst-en tekst-en";
+    grid-gap: 1em;
+}
+
+nav{
+    background-color: #5A4632;
+    border-color: white;
+    border-style: double;
+    border-left: 0;
+    border-top: 0;
+    padding: 1.5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-area: nav;
+    
+    
+}
+
+li{
+    display: flex;
+    margin: 0.5%;
+    margin-right: 1em;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+li a{
+    text-align: center;
+    text-decoration: none;
+    color: #EFEFE8;
+    font-size: 1.3em;
+    font-family: corbel;
+}
+
+.bezig-pagina{
+    color: black;
+}
+
+
+
+.tekst{
+    display: inline;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 18%;
+    grid-area: tekst;
+}
+
+.tekst-en{
+    display: inline;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 8%;
+    grid-area: tekst-en;
+}
+
+p{
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-family: corbel;
+}
+
+h2{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: corbel;
+}
+
+
+.foto-hooft{
+    width: 400px;
+    object-fit: contain;
+    padding-top: 4em;
+    margin: auto;
+    margin-right: auto;
+    grid-area: foto-hooft;
+}
+
+img{
+    margin-top: 4em;
+    width: 350px;
+    margin-left: 1em;
+}
+
+.foto-tekst-midden{
+    border: #BC9E84;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-style: solid;
+}
+
+.foto-tekst-midden img{
+    display: block;
+    margin: auto;
+}
+
+.foto-tekst-midden p{
+    text-align: center;
+    font-style: oblique;
+}
+
+.foto-tekst-midden-3 img{
+    display: block;
+    margin: auto;
+}
+
+.foto-tekst-midden-3 p{
+    text-align: center;
+    font-style: oblique;
+}
+
+.foto-tekst-midden-beneden{
+    border: #BC9E84;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-style: solid;
+}
+
+.foto-tekst-midden-beneden img{
+    display: block;
+    margin: auto;
+}
+
+.foto-tekst-midden-beneden p{
+    text-align: center;
+    font-style: oblique;
+}
+
+.foto-tekst-midden-top{
+    border: #BC9E84;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-style: solid;
+    margin-top: 5em;
+
+}
+
+.foto-tekst-midden-top img{
+    display: block;
+    margin: auto;
+}
+
+.foto-tekst-midden-top p{
+    text-align: center;
+    font-style: oblique;
+}
+
+.pagina-fotos{
+    background-color: #5A4632;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    grid-template-areas: "nav nav" "tekst foto-hooft";
+    grid-gap: 1em;
+}
+
+.pagina-contact{
+    background-color: #5A4632;
+}
+
+.contact{
+    padding-top: 5em;
+    padding-left: 2em;
+}
+
+.tekst-margin-links{
+    margin-left: 2em;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .pagina-home , .pagina-fotos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr 3fr;
+        grid-template-areas: "nav" "tekst" "foto-hooft";
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .pagina-home , .pagina-fotos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr 3fr 3fr;
+        grid-template-areas: "nav" "tekst" "foto-hooft" "tekst-en";
+    }
+}
