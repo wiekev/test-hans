@@ -187,13 +187,12 @@ img{
 }
 
 .contact{
-    padding-top: 5em;
-    padding-left: 2em;
+    margin-top: 8em;
+    margin-left: 4%;
+    
 }
 
-.tekst-margin-links{
-    margin-left: 2em;
-}
+
 
 
 @media only screen and (max-width: 800px) {
