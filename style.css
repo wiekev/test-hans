@@ -46,8 +46,7 @@ ul {
 li a {
   text-align: center;
   text-decoration: none;
-  /* color: #efefe8; */
-  color: blue;
+  color: #efefe8;
   font-size: 1em;
   font-family: corbel;
 }
